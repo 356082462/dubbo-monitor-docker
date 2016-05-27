@@ -3,9 +3,9 @@ MAINTAINER zetas
 
 ADD monitorcenter-assembly.tar.gz /
 
-WORKDIR /
-
-RUN tar -xvzf monitorcenter-assembly.tar.gz
+RUN cd / \
+    && ls
+    && tar -xvzf /monitorcenter-assembly.tar.gz
 
 WORKDIR /monitorcenter
 
