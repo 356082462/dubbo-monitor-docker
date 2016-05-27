@@ -15,6 +15,4 @@ VOLUME ["/monitorcenter/conf",
 
 WORKDIR /monitorcenter
 
-CMD ["bin/server.sh", "start"]
-
 
