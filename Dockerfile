@@ -10,9 +10,10 @@ RUN cd / \
 
 EXPOSE 9998 9999
 
-VOLUME ["/monitorcenter/conf", 
-        "/monitorcenter/logs"]  
+VOLUME ["/monitorcenter/conf"]  
 
 WORKDIR /monitorcenter
+
+ENTRYPOINT ["bin/server.sh", "start"]
 
 
