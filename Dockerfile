@@ -1,11 +1,7 @@
 FROM java:7
 MAINTAINER zetas
 
-ADD monitorcenter-assembly.tar.gz /
-
-RUN tar -xvzf /monitorcenter-assembly.tar.gz \
-    && rm -rf /monitorcenter-assembly.tar.gz \
-    && mv monitorcenter /monitorcenter
+ADD ./monitorcenter-assembly.tar.gz /
 
 EXPOSE 9998 9999
 
