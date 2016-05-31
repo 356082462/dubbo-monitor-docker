@@ -16,6 +16,6 @@ VOLUME ["/monitorcenter/conf"]
 
 WORKDIR /monitorcenter
 
-ENTRYPOINT ["bin/server.sh", "start"]
+ENTRYPOINT ["bin/server.sh", "debug"]
 
 
