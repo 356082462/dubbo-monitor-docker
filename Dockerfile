@@ -9,6 +9,7 @@ RUN cd / \
     && tar -xvzf monitorcenter-assembly.tar.gz \ 
     && rm -rf monitorcenter-assembly.tar.gz \
     && cp /run.sh /monitorcenter/run.sh \
+    && chmod +x /monitorcenter/run.sh \
     && apt-get update \
     && apt-get install net-tools
 
