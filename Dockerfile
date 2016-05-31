@@ -10,12 +10,14 @@ RUN cd / \
     && apt-get update \
     && apt-get install net-tools
 
+WORKDIR /monitorcenter
+
+COPY ./run.sh /
+
 EXPOSE 9998 9999
 
 VOLUME ["/monitorcenter/conf"]  
 
-WORKDIR /monitorcenter
-
-ENTRYPOINT ["bin/server.sh", "debug"]
+ENTRYPOINT ["run.sh"]
 
 
