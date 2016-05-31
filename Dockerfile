@@ -18,6 +18,6 @@ VOLUME ["/monitorcenter/conf"]
 
 WORKDIR /monitorcenter
 
-ENTRYPOINT ["run.sh"]
+ENTRYPOINT ["./run.sh"]
 
 
